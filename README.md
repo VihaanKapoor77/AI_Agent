@@ -1,9 +1,16 @@
 # AI_Agent
 A simple AI_Agent that can help you code
 # How to Use
-1st install all the libs you need(note you do need python)
-`py -m pip install rich ddgs pytest ollama`
-then run the file
-`py agent.py`
-# What To Use this for
-This is more of a profile project rather then a useful tool
+1st run
+`py -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt`
+to make the vm and the reqs.
+then run
+`Copy-Item .env.example .env
+notepad .env`
+to make your own .env
+then replace 
+"GOOGLE_API_KEY=your_actual_key_here"
+with your api key
+save it then run 
+`.\.venv\Scripts\python.exe agents.py`
